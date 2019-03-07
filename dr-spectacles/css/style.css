@@ -1,0 +1,562 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+body {
+	color: #eee;
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+}
+
+header {
+	height: 100vh;
+	background-image: linear-gradient(to right bottom, rgba(12, 7, 2, 0.7), rgba(21, 21, 21, 0.86)), url('../img/cover_glasses.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+#switch-lang-en,
+#switch-lang-nl {
+	background-color: transparent;
+    border: 0;
+}
+
+.language {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+}
+
+.language {
+	font-family: 'Great Vibes';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: 2px;
+	list-style-type: none;
+	text-decoration: none;
+	color: #bbb;
+}
+
+.language:hover {
+	font-family: 'Great Vibes';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: 2px;
+	list-style-type: none;
+	text-decoration: none;
+	color: #fff;
+}
+
+.text-box {
+	position: absolute;
+	margin: 0 auto;
+	left: 30%;
+	top: 40%;
+	border: 1px dotted rgb(72, 45, 15);
+	background-color: #0003;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.heading-primary {
+	padding: 15px;
+	backface-visibility: hidden;
+}
+
+.heading-primary-main {
+	text-transform: uppercase;
+	display: block;
+	color: #fff;
+	font-weight: 400;
+	font-size: 52px;
+	letter-spacing: 7px;
+	text-align: left;
+	animation-name: moveInLeft;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+}
+
+.heading-primary-sub {
+	text-transform: lowercase;
+	display: block;
+	font-size: 24px;
+	font-weight: 600;
+	color: rgb(72, 45, 15);
+	text-shadow: 1.5px 1.5px #000;
+	letter-spacing: 3px;
+	line-height: 2.5;
+	text-align: right;
+	animation: moveInRight 2s ease-out;
+}
+
+@keyframes moveInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-200px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(200px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+.btn-box {
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+	top: 70%;
+	text-align: center;
+}
+
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	background-color: rgba(72, 45, 15, 0.5);
+	border: 1px dotted #000;
+	text-decoration: none;
+	text-shadow: 1px 1px #000;
+	text-transform: uppercase;
+	padding: 15px 40px;
+	box-shadow: 0 10px 15px #000;
+	color: rgba(255, 255, 255, 0.9);
+	animation: moveInBottom 0.9s ease-out 0.7s;
+	animation-fill-mode: backwards;
+}
+
+.btn:hover {
+	color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0 15px 20px #000;
+}
+
+.section-about-us {
+	width: 100vw;
+	height: 350px;
+}
+
+.col-1-of-3 {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+	font-weight: 400;
+	text-align: center;
+	background-color: #322a21;
+	width: 30%;
+	height: 100%;
+	float: left;
+	display: inline-block;
+	position: relative;
+}
+
+.col-1-of-3>h1 {
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+.col-2-of-3 {
+	background-image: linear-gradient(to right bottom,  rgba(57, 49, 41, 0.47), #272723e6), url('../img/banner_glasses.png');
+	background-size: cover;
+	background-position: center;
+	width: 40%;
+	height: 100%;
+	float: left;
+	display: inline-block;
+	background-color: #000;
+}
+
+.col-3-of-3 {
+	font-weight: 400;
+	text-align: center;
+	background-color: #171519;
+	width: 30%;
+	height: 100%;
+	padding: 5% 3%;
+	letter-spacing: 3px;
+	font-style: italic;
+	font-size: 16px;
+	display: inline-block;
+}
+
+.bold {
+	color: #7e633f;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.section-signature, 
+.contact {
+	width: 100vw;
+	height: 450px;
+	background-color: rgba(72, 45, 15, 0.9);
+}
+
+.col-1 {
+	width: 100%;
+	text-align: center;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	letter-spacing: 3px;
+	font-style: italic;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.col-1>h1 {
+	padding-top: 5%;
+	font-family: 'Great Vibes';
+	font-weight: 100;
+	padding-bototom: 10%;
+}
+
+.col-1>h3 {
+	padding-top: 5%;
+	font-weight: 400;
+}
+
+.bold-brown {
+	color: #7e633f;
+	font-weight: bold;
+	font-size: 20px;
+	text-shadow: 1px 1.5px #000;
+}
+
+.section-glasses {
+	width: 100vw;
+	height: 450px;
+	background-image: linear-gradient(to right bottom,  rgba(57, 49, 41, 0.47), rgba(57, 49, 41, 0.47)), url('../img/boy-bright.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.column-1-of-3,
+.column-2-of-3,
+.column-3-of-3 {
+	display: inline-block;
+	width: 32.7%;
+	height: 100%;
+	padding: 5px 10px;
+}
+
+.card {
+	perspective: 150rem;
+	-moz-perspective: 150rem;
+	position: relative;
+	height: 100%;
+}
+
+.card__side {
+	height: 100%;
+	transition: all .8s ease;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	backface-visibility: hidden;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.card__side--front {
+	background-image: linear-gradient(to right bottom, #5a3d27, #a76c2a);
+}
+
+.card__side--back {
+	transform: rotateY(180deg);
+}
+
+.card__side--back-1 {
+	background-image: linear-gradient(to right bottom, #5a4227, #17080199);
+}
+
+.card:hover
+.card__side--front {
+	transform: rotateY(-180deg);
+}
+
+.card:hover
+.card__side--back {
+	transform: rotateY(0);
+}
+
+.card__picture-a {
+	background-size: cover;
+	height: 100%;
+	background-blend-mode: screen;
+	-webkit-clip-path: polygon(0 25%, 100% 15%, 100% 85%, 0 100%);
+	clip-path: polygon(0 25%, 100% 15%, 100% 85%, 0 100%);
+}
+
+.card__picture-b {
+	background-size: cover;
+	height: 100%;
+	background-blend-mode: screen;
+	-webkit-clip-path: polygon(0 15%, 50% 7%, 100% 15%, 100% 85%, 50% 80% ,0 85%);
+	clip-path: polygon(0 15%, 50% 7%, 100% 15%, 100% 85%, 50% 80% ,0 85%);
+}
+
+.card__picture-c {
+	background-size: cover;
+	height: 100%;
+	background-blend-mode: screen;
+	-webkit-clip-path: polygon(0 15%, 100% 25%, 100% 100%, 0% 85%);
+	clip-path: polygon(0 15%, 100% 25%, 100% 100%, 0% 85%);
+}
+
+.card__picture--1 {
+	background-image: linear-gradient(to right bottom, rgba(57, 49, 41, 0.3), #000), url('../img/glasses_type_3.jpg');
+	background-position: center;
+}
+
+.card__picture--2 {
+	background-image: linear-gradient(to right bottom, rgba(57, 49, 41, 0.3), #000), url('../img/glasses_type_5.jpg');
+	background-position: center;
+}
+
+.card__picture--3 {
+	background-image: linear-gradient(to right bottom, rgba(57, 49, 41, 0.3), #000), url('../img/glasses_type_4.jpg');
+	background-position: center;
+}
+
+.card__picture--4 {
+	background-image: linear-gradient(to right bottom, rgba(57, 49, 41, 0.3), #000), url('../img/glasses_type_1.jpg');
+	background-position: center;
+}
+
+.card__picture--5 {
+	background-image: linear-gradient(to right bottom, rgba(57, 49, 41, 0.3), #000), url('../img/glasses_type_2.jpg');
+	background-position: center;
+}
+
+.card__picture--6 {
+	background-image: linear-gradient(to right bottom, rgba(57, 49, 41, 0.3), #000), url('../img/glasses_type_5.jpg');
+	background-position: center;
+}
+
+.col-1-of-2-map {
+	line-height: 5em;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+	font-weight: 400;
+	text-align: center;
+	background-color: #322a21;
+	width: 35%;
+	height: 100%;
+	display: inline-block;
+}
+
+.col-2-of-2-map {
+	background-color: #322a21;
+	width: 64.5%;
+	height: 100%;
+	display: inline-block;
+}
+
+iframe {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;background-color: #f0f !important;
+
+}
+
+.mapouter {
+	text-align:right;
+	height:100%;
+	width:100%;background-color: #f0f !important;
+}
+
+.gmap_canvas {
+	overflow:hidden;
+	background:none!important;
+	height:100%;
+	width:100%;
+	background-color: #f0f !important;
+}
+
+.map {
+	-webkit-filter: sepia(50%);
+       -moz-filter: sepia(50%);
+        -ms-filter: sepia(50%);
+         -o-filter: sepia(50%);
+            filter: sepia(50%);
+}
+
+@media all and (max-width: 1053px) and (min-width: 1006px) {
+
+	.heading-primary-main {
+		font-size: 46px !important;
+		letter-spacing: 5px !important;
+	}
+
+	.heading-primary-sub {
+		letter-spacing: 3px !important;
+		line-height: 2 !important;
+	}
+
+	.col-3-of-3 {
+		padding: 5% 2% !important;
+		letter-spacing: 2px !important;
+		font-size: 17px !important;
+	}
+
+	.bold {
+		font-size: 18px !important;
+	}
+}
+
+@media all and (max-width: 1005px) and (min-width: 920px) {
+
+	.heading-primary-main {
+		font-size: 46px !important;
+		letter-spacing: 5px !important;
+	}
+
+	.heading-primary-sub {
+		letter-spacing: 3px !important;
+		line-height: 2 !important;
+	}
+
+	.col-3-of-3 {
+		padding: 5% 2% !important;
+		letter-spacing: 2px !important;
+		font-size: 16px !important;
+	}
+
+	.bold {
+		font-size: 17px !important;
+	}
+}
+
+@media all and (max-width: 999px) and (min-width: 806px) {
+
+	.heading-primary-main {
+		font-size: 46px !important;
+		letter-spacing: 5px !important;
+	}
+
+	.heading-primary-sub {
+		letter-spacing: 3px !important;
+		line-height: 2 !important;
+	}
+
+	.col-3-of-3 {
+		padding: 5% 2% !important;
+		letter-spacing: 2px !important;
+		font-size: 15px !important;
+	}
+
+	.bold {
+		font-size: 16px !important;
+	}
+}
+
+@media all and (max-width: 805px) {
+
+	.text-box {
+		position: absolute;
+		margin: 0 auto;
+		left: 5%;
+		top: 20%;
+		margin-bottom: 50px;
+	}
+
+	.heading-primary-main {
+		font-size: 30px !important;
+		letter-spacing: 3px !important;
+	}
+
+	.heading-primary-sub {
+		font-size: 18px !important;
+		letter-spacing: 2px !important;
+		line-height: 1.5 !important;
+	}
+
+	.section-about-us,
+	.section-signature, 
+	.contact {
+		width: 100vw;
+		height: 100%;
+		display: block;
+	}
+
+	.col-1 {
+		width: 100vw;
+		height: 100%;
+		display: block;
+		padding: 10% 2%;
+	}
+
+	.col-1-of-3,
+	.col-2-of-3 {
+		width: 100vw;
+		height: 350px;
+		display: block;
+	}
+
+	.col-3-of-3 {
+		width: 100vw;
+		padding: 15% 5% !important;
+		letter-spacing: 2px !important;
+		font-size: 18px !important;
+		height: 350px;
+	}
+
+	.bold {
+		font-size: 16px !important;
+	}
+
+	.section-glasses {
+		width: 100vw;
+		display: block;
+		height: 100%;
+	}
+
+	.column-1-of-3,
+	.column-2-of-3,
+	.column-3-of-3 {
+		display: block;
+		width: 100vw;
+		height: 350px;
+		padding: 5px 10px;
+	}
+
+
+}
+
