@@ -275,13 +275,20 @@ header {
 
 .card {
 	perspective: 150rem;
+	-webkit-perspective: 150rem;	
 	-moz-perspective: 150rem;
+	-ms-perspective: 150rem;
+	-o-perspective: 150rem;
 	position: relative;
 	height: 100%;
 }
 
 .card__side {
 	height: 100%;
+	-webkit-transition: all .8s ease;	
+	-moz-transition: all .8s ease;
+	-ms-transition: all .8s ease;
+	-o-transition: all .8s ease;
 	transition: all .8s ease;
 	position: absolute;
 	top: 0;
