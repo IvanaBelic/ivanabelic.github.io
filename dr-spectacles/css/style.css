@@ -275,7 +275,10 @@ header {
 
 .card {
 	perspective: 150rem;
+	-webkit-perspective: 150rem;
 	-moz-perspective: 150rem;
+	-ms-perspective: 150rem;
+	-o-perspective: 150rem;
 	position: relative;
 	height: 100%;
 }
@@ -299,6 +302,10 @@ header {
 
 .card__side--back {
 	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
 }
 
 .card__side--back-1 {
@@ -308,11 +315,19 @@ header {
 .card:hover .card__side--front,
 .card:active .card__side--front {
 	transform: rotateY(-180deg);
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
 }
 
 .card:hover .card__side--back,
 .card:active .card__side--back {
 	transform: rotateY(0);
+	-webkit-transform: rotateY(0);
+	-moz-transform: rotateY(0);
+	-ms-transform: rotateY(0);
+	-o-transform: rotateY(0);
 }
 
 .card__picture-a {
