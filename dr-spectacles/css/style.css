@@ -305,11 +305,13 @@ header {
 	background-image: linear-gradient(to right bottom, #5a4227, #17080199);
 }
 
-.card:hover .card__side--front {
+.card:hover .card__side--front,
+.card:active .card__side--front {
 	transform: rotateY(-180deg);
 }
 
-.card:hover .card__side--back {
+.card:hover .card__side--back,
+.card:active .card__side--back {
 	transform: rotateY(0);
 }
 
