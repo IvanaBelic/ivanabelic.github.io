@@ -26,7 +26,7 @@ header {
 #switch-lang-en,
 #switch-lang-nl {
 	background-color: transparent;
-	border: 0;
+    border: 0;
 }
 
 .language {
@@ -274,7 +274,7 @@ header {
 }
 
 .card {
-	perspective: 150rem;	
+	perspective: 150rem;
 	-moz-perspective: 150rem;
 	position: relative;
 	height: 100%;
@@ -305,13 +305,11 @@ header {
 	background-image: linear-gradient(to right bottom, #5a4227, #17080199);
 }
 
-.card:hover,
-.card__side--front {
+.card:hover .card__side--front {
 	transform: rotateY(-180deg);
 }
 
-.card:hover,
-.card__side--back {
+.card:hover .card__side--back {
 	transform: rotateY(0);
 }
 
@@ -367,55 +365,6 @@ header {
 .card__picture--6 {
 	background-image: linear-gradient(to right bottom, rgba(57, 49, 41, 0.3), #000), url('../img/glasses_type_6.jpg');
 	background-position: center;
-}
-
-.col-1-of-2-map {
-	line-height: 5em;
-	letter-spacing: 5px;
-	word-spacing: 10px;
-	font-weight: 400;
-	text-align: center;
-	background-color: #322a21;
-	width: 35%;
-	height: 100%;
-	display: inline-block;
-}
-
-.col-2-of-2-map {
-	background-color: #322a21;
-	width: 64.5%;
-	height: 100%;
-	display: inline-block;
-}
-
-iframe {
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	height: 100%;background-color: #f0f !important;
-
-}
-
-.mapouter {
-	text-align:right;
-	height:100%;
-	width:100%;background-color: #f0f !important;
-}
-
-.gmap_canvas {
-	overflow:hidden;
-	background:none!important;
-	height:100%;
-	width:100%;
-	background-color: #f0f !important;
-}
-
-.map {
-	-webkit-filter: sepia(50%);
-       -moz-filter: sepia(50%);
-        -ms-filter: sepia(50%);
-         -o-filter: sepia(50%);
-            filter: sepia(50%);
 }
 
 @media all and (max-width: 1053px) and (min-width: 1006px) {
